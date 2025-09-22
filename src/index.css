@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Restaurant Saraya El Dimachki Design System
+Syrian-inspired warm colors and elegant styling
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Syrian Restaurant Color Palette */
+    --background: 28 15% 8%;
+    --foreground: 45 100% 85%;
+
+    --card: 28 20% 12%;
+    --card-foreground: 45 95% 90%;
+
+    --popover: 28 25% 10%;
+    --popover-foreground: 45 95% 90%;
+
+    /* Primary: Rich Gold */
+    --primary: 45 85% 55%;
+    --primary-foreground: 28 15% 8%;
+
+    /* Secondary: Warm Earth */
+    --secondary: 25 35% 25%;
+    --secondary-foreground: 45 90% 85%;
+
+    /* Muted: Soft Warm Tone */
+    --muted: 28 25% 18%;
+    --muted-foreground: 45 40% 70%;
+
+    /* Accent: Deep Burgundy */
+    --accent: 350 45% 35%;
+    --accent-foreground: 45 95% 90%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 28 30% 20%;
+    --input: 28 30% 15%;
+    --ring: 45 85% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom Restaurant Colors */
+    --gold: 45 85% 55%;
+    --gold-light: 48 90% 65%;
+    --gold-dark: 42 80% 45%;
+    --burgundy: 350 45% 35%;
+    --burgundy-light: 350 55% 45%;
+    --earth: 25 35% 25%;
+    --earth-light: 28 40% 35%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(45 85% 55%), hsl(350 45% 35%));
+    --gradient-warm: linear-gradient(180deg, hsl(28 20% 12%), hsl(28 15% 8%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 85% 55%), hsl(48 90% 65%));
+    
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -10px hsl(45 85% 55% / 0.3);
+    --shadow-elegant: 0 20px 40px -15px hsl(28 15% 8% / 0.5);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
